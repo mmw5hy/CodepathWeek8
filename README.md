@@ -36,7 +36,8 @@ Entering the text "<script>alert('Michael found the XSS!');</script>" into the f
 Vulnerability #1: Insecure Direct Object Reference
 On the red website, the query parameter "id" in the url of the "find a salesperson" lookup can be manually changed to access all salespersons, such as at id=10 (which is says shouldn't be public until sept. 1). On the other two sites, entering the corresponding url "https://35.202.198.115/red/public/salesperson.php?id=10" redirects the user to the public salesperson home page, but only the red site shows the info on the salesman. 
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross-Site Request Forgery
+On the red website, an administrator can navigate to the users page and then add a new user. However, if they inspect element on the page and modify the csrf token of the user creation form, the user is still created once they submit the form. Since the csrf token was modified, this request should fail, but since it doesn't, this indicates that this site is susceptible to cross site request forgery.
 
 
 ## Notes
