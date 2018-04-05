@@ -31,7 +31,8 @@ Vulnerability #2: __________________
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure Direct Object Reference
+On the red website, the query parameter "id" in the url of the "find a salesperson" lookup can be manually changed to access all salespersons, such as at id=10 (which is says shouldn't be public until sept. 1). On the other two sites, entering the corresponding url "https://35.202.198.115/red/public/salesperson.php?id=10" redirects the user to the public salesperson home page, but only the red site shows the info on the salesman. 
 
 Vulnerability #2: __________________
 
