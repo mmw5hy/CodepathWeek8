@@ -23,7 +23,8 @@ Vulnerability #2: __________________
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Username Enumeration
+When attempting to login with "jmonroe99" but an invalid password, all websites give the output message "log in was unsuccessful" in a span element with the class "failure". However, when logging in with the name of a user account that doesn't exist, such as "asdfasdfa", the green site prins out the error message in a span element with the class "failed" rather than "failure" as the other two do. 
 
 Vulnerability #2: __________________
 
