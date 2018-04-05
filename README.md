@@ -16,7 +16,8 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 
 ## Blue
 
-Vulnerability #1: __________________
+  Vulnerability #1: SQL Injection
+  An id is passed as a parameter in the salesperson lookup page. Modifying the id to be %27 (https://35.202.198.115/blue/public/salesperson.php?id=%27) on the blue website causes a page to pop up that says "database query failed." This shows that by changing the id in the url, we are able to directly change the sql command tha tis made to the database. The other two sites simply redirect the user to the default salesperson page.
 
 Vulnerability #2: __________________
 
