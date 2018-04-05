@@ -43,4 +43,4 @@ On the red website, an administrator can navigate to the users page and then add
 
 ## Notes
 
-Describe any challenges encountered while doing the work
+If more hints were given this assignment would be easier to do - I found myself without a place to start for most of the attacks and just trying random things.
